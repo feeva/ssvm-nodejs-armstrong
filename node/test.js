@@ -1,2 +1,10 @@
-const { say } = require('../pkg/ssvm_nodejs_starter_lib.js');
-console.log( say("Node.js") );
+const { armstrong } = require('../pkg/ssvm_nodejs_starter_lib.js');
+console.log( !!armstrong("0") === true );
+console.log( !!armstrong("5") === true );
+console.log( !!armstrong("10") === false );
+console.log( !!armstrong("153") === true );
+console.log( !!armstrong("100") === false );
+console.log( !!armstrong("9474") === true );
+console.log( !!armstrong("9475") === false );
+console.log( !!armstrong("9926315") === true );
+console.log( !!armstrong("9926314") === false );
